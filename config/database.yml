@@ -1,0 +1,20 @@
+
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  user: admininstrator
+  password: 1234567
+
+development:
+  <<: *default
+  database: library_dev
+
+
+test:
+  <<: *default
+  database: library_test
+
+production:
+  <<: *default
+  database: library_prod
