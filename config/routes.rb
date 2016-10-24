@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'slots#index'
+  resources 'books', :only => [:show]
+  get 'cassandra' => 'cassandra#index'
 end

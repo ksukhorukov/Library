@@ -29,6 +29,11 @@ GEM
       globalid (>= 0.3.6)
     activemodel (5.0.0.1)
       activesupport (= 5.0.0.1)
+    activemodel-serializers-xml (1.0.1)
+      activemodel (> 5.x)
+      activerecord (> 5.x)
+      activesupport (> 5.x)
+      builder (~> 3.1)
     activerecord (5.0.0.1)
       activemodel (= 5.0.0.1)
       activesupport (= 5.0.0.1)
@@ -41,6 +46,11 @@ GEM
     arel (7.1.4)
     builder (3.2.2)
     byebug (9.0.6)
+    cassandra-driver (3.0.3)
+      ione (~> 1.2)
+    cequel (2.0.2)
+      activemodel (>= 4.0)
+      cassandra-driver (~> 3.0)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.2.x)
@@ -56,6 +66,7 @@ GEM
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
+    ione (1.2.3)
     jbuilder (2.6.0)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
@@ -154,7 +165,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activemodel-serializers-xml
   byebug
+  cequel
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   jquery-rails

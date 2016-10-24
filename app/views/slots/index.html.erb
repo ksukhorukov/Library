@@ -1,0 +1,17 @@
+<table border="1">
+	<tr>
+		<th>#</th><th>Versions</th>
+	</tr>
+	<% @slots.each_with_index do |slot, i| %>
+	<tr>
+		<td><%= i+1 %></td>
+		<td>
+			<ul>
+				<% slot.books.sort_by(&:created_at).each_with_index do |book, version| %>
+					<li><%=  link_to book.title, book %></li>
+				<% end %>
+			</ul>
+		</td>
+	</tr>
+	<% end %>
+</table>
