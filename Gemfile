@@ -30,6 +30,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'cequel'
 gem 'activemodel-serializers-xml'
+gem 'sidekiq', '~> 4.2', '>= 4.2.3'
+gem 'sinatra', require: false
+gem 'slim'
+gem 'whenever', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -5,6 +5,8 @@ default: &default
   timeout: 5000
   user: admininstrator
   password: 1234567
+  host: localhost
+  port: 5000
 
 development:
   <<: *default
